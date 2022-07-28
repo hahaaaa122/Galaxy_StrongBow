@@ -1,0 +1,324 @@
+body {
+    background-image: url(./img/nen___1.jpg);
+    background-size: cover;
+    background-position-y: -100px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container {
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+#header {
+
+    padding: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+#logo {
+    padding: 5px 0;
+}
+
+#logo img {
+    max-width: 60px;
+    height: auto;
+}
+
+#main-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    color: #fff;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#main-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    color: #fff;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#main-menu li a:hover {
+    color: #205cb6;
+    transition: color .2s ease-out;
+}
+
+
+
+
+
+.cardd {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 220px;
+    margin-right: 110px;
+
+    flex-basis: 25%;
+    padding: 20px;
+}
+
+.card {
+    margin: 40px;
+    margin-top: 30px;
+    width: 150px;
+    height: 240px;
+    background-image: url(./img/nen4.jpg);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+
+}
+
+.card__heart,
+.card__cart {
+    font-size: 15px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.card__cart {
+    left: unset;
+    right: 20px;
+}
+
+.card__img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card__title,
+.card__price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card__title {
+    color: #f39a48;
+}
+
+.card__size,
+.card__color {
+    display: flex;
+    align-items: center;
+}
+
+.card__size span {
+    padding: 1px 5px;
+    background: #f39a48;
+    color: #131921;
+    border-radius: 5px;
+    margin: 0 2px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.card__size,
+.card__color {
+    display: flex;
+    align-items: center;
+}
+
+.card__color span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.card__color--green {
+    background: #131921;
+}
+
+.card__color--red {
+    background: #fff;
+}
+
+.card__color--blue {
+    background: #205cb6;
+
+}
+
+
+
+.card__action button {
+    background: #aacafa;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 3px;
+    cursor: pointer;
+
+}
+
+.card__action a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.card__action {
+    background: #6194e0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 2px 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.card:hover .card__img {
+    transform: translateY(-90px) rotate(20deg);
+}
+
+.card:hover .card__title {
+    transform: translate(-41px, -70px);
+}
+
+.card:hover .card__price {
+    transform: translate(-50px, -70px);
+}
+
+.card__size {
+    margin-top: 50px;
+
+}
+
+.card__size,
+.card__color,
+.card__action {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover .card__size,
+.card:hover .card__color,
+.card:hover .card__action {
+    visibility: visible;
+    opacity: 100;
+    transition: 0.5s;
+    transition-delay: 0.4s;
+
+}
+
+.card:hover .card__size {
+    margin-top: -70px;
+}
+
+.card__action button:hover {
+    transform: scale(0.9);
+}
+
+.showshoping {
+    position: absolute;
+    margin-right: 20px;
+    top: 40px;
+    z-index: 999;
+    cursor: pointer;
+
+
+
+}
+
+
+
+.cart_logo {
+    cursor: pointer;
+}
+
+.showcart {
+    position: fixed;
+    border-radius: 10px;
+    right: 30px;
+    top: 50px;
+    padding: 10px;
+    border: 1px rgb(46, 41, 41) solid;
+
+}
+
+table {
+    border-collapse: collapse;
+
+
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    background: #ccc;
+    border: 1px rgb(46, 41, 41) solid;
+}
+
+
+th {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+#showshoping a:last-child {
+    padding: 0px;
+    display: inherit;
+
+}

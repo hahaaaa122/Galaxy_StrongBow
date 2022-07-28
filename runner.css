@@ -1,0 +1,139 @@
+body {
+    background-image: url(./img/anhnenadidas2.jpg);
+    background-size: cover;
+    background-position-y: -200px;
+
+}
+
+.container {
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+#header {
+
+    padding: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+#logo {
+    padding: 5px 0;
+}
+
+#logo img {
+    max-width: 60px;
+    height: auto;
+}
+
+#main-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    color: #fff;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#main-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    color: #fff;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#main-menu li a:hover {
+    color: #205cb6;
+    transition: color .2s ease-out;
+}
+
+#main-menu ul.sub-menu {
+    position: absolute;
+    background-color: #131921;
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border: 1px solid rgb(223, 213, 213);
+    display: none;
+}
+
+#main-menu li:hover>ul.sub-menu {
+    display: block;
+
+}
+
+#main-menu ul.sub-menu a {
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(180, 178, 178);
+    left: 0;
+}
+
+#main-menu ul.sub-menu li:hover>a {
+    border-bottom: 1px solid rgb(223, 213, 213);
+
+}
+
+#main-menu ul.sub-menu li:last-child a {
+    border: none;
+}
+
+#main-menu ul.sub-menu ul.sub-menu {
+    left: 200px;
+    top: -15px;
+}
+
+#main-menu>li.has-child::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    color: rgb(189, 191, 194);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 18px 0px;
+
+}
+
+#main-menu .sub-menu>li.has-child::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    color: rgb(189, 191, 194);
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding: 8px 0px;
+}
