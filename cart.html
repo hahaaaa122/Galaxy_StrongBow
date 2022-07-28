@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>CART</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="donhang.html" id="logo"><img src="./img/adidas7.png" alt="ADIDAS"></a>
+                <ul id="main-menu">
+                    <li><a href="runner.html">Menu</a>
+                    </li>
+                    <li><a style="cursor: pointer"><i id="soluonghang" onclick="showhidecart()"
+                                class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+
+        </li>
+        </ul>
+
+        </nav>
+    </div>
+    </div>
+    <div>
+        <div class="ttnh" style="margin-left: 390px;
+        ">
+            <h1 id="hhh" style=" margin-right: 615px;
+            margin-left: 250px;
+            margin-bottom: revert;
+        ">Giỏ Hàng</h1>
+            <table class="thongtinnhanhang">
+                <tbody id="thongtinnhanhang">
+                    <tr>
+                        <td> Họ tên</td>
+                        <td><input type="text" name="hoten"></td>
+                    </tr>
+                    <tr>
+                        <td> Địa chỉ</td>
+                        <td><input type="text" name="diachi"></td>
+                    </tr>
+                    <tr>
+                        <td> Số điện thoại</td>
+                        <td><input type="number" name="dienthoai"></td>
+                    </tr>
+                    <tr>
+                        <td> Email</td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div>
+                <button style="background: #f39a48;" class="btn_dh" onclick="dongydathang()"> ĐẶT HÀNG</button>
+            </div>
+        </div>
+        <div id="showshoping1" class="showshoping1">
+            <table class="showcartt">
+                <tr>
+                    <td>STT</td>
+                    <td>Img</td>
+                    <td>Name</td>
+                    <td>Size</td>
+                    <td>Price</td>
+                    <td>
+                        Thành Tiền
+                    </td>
+
+                </tr>
+                <!-- <tr>
+                    <th colspan="5"></th>
+                    <th>
+                        <div></div>
+                    </th>
+                </tr> -->
+
+                <tbody id="giohangchitiet1">
+
+                </tbody>
+
+
+
+            </table>
+
+        </div>
+        <script src="sneaker.js"></script>
+        <script>
+            showthanhtoan();
+        </script>
+
+        <script src=" https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function () {
+                // li có sub-menu
+                $('.sub-menu').parent('li').addClass('has-child')
+            });
+        </script>
+</body>
+
+</html>

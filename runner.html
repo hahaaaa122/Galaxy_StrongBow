@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="runner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="#" id="logo"><img src="./img/adidas7.png" alt="ADIDAS"></a>
+                <ul id="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Menu</a>
+                        <ul class="sub-menu">
+                            <li><a href="sneaker.html">SNEAKERS</a>
+                            </li>
+                            <li><a href="">SPORTS </a>
+                                <ul class="sub-menu">
+                                    <li><a href="run.html">RUNNER</a></li>
+                                    <li><a href=" basketball.html">BASKETBALL</a></li>
+                                    <li><a href="soccer.html">SOCCER</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#">BEST SELLER </a>
+                                <ul class="sub-menu">
+                                    <li><a href="best_seller(2021).html">2021</a></li>
+                                    <li><a href="best_seller(2022).html">2022 </a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="">ESSENTIALS</a>
+
+
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="https://www.adidas.com/us">What's New</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script src=" https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            // li có sub-menu
+            $('.sub-menu').parent('li').addClass('has-child')
+        });
+    </script>
+
+    </div>
+</body>
+
+</html>

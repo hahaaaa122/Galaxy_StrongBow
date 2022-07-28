@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sneaker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>SNEAKER</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="#" id="logo"><img src="./img/adidas7.png" alt="ADIDAS"></a>
+                <ul id="main-menu">
+                    <li><a href="runner.html">Menu</a>
+                    </li>
+                    <li><a style="cursor: pointer"><i id="soluonghang" onclick="showhidecart()"
+                                class="fa-solid fa-cart-shopping"></i></a>
+                        <div id="showshoping" class="showshoping">
+                            <table class="showcart">
+                                <tr>
+                                    <td>STT</td>
+                                    <td>Img</td>
+                                    <td>Name</td>
+                                    <td>Size</td>
+                                    <td>Price</td>
+                                    <td>
+                                        <a href="cart.html">Thanh Toán</a>
+                                    </td>
+
+                                </tr>
+                                <!-- <tr>
+                                    <th colspan="5"></th>
+                                    <th>
+                                        <div></div>
+                                    </th>
+                                </tr> -->
+
+                                <tbody id="giohangchitiet">
+
+                                </tbody>
+
+
+
+                            </table>
+
+
+
+
+                        </div>
+
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <script src=" https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            // li có sub-menu
+            $('.sub-menu').parent('li').addClass('has-child')
+        });
+    </script>
+
+    </div>
+    <nav1 class="cardd">
+        <div class="card">
+            <div class="card__heart"><i class="fa-solid fa-heart"></i></div>
+            <div class="card__cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="card__img">
+                <img src="./img/giay2.png">
+            </div>
+
+            <div class="card__title">Converse Chuck Taylor</div>
+            <div class="card__price">360$</div>
+            <div class="card__size">
+                <h3>SIZE:</h3>
+                <span>39</span>
+                <span>40</span>
+                <span>41</span>
+                <span>42</span>
+            </div>
+
+            <button style="margin-left: 30px" class="card__action" onclick="addtocart(this)">Add Cart</button>
+
+        </div>
+        <div class="card">
+            <div class="card__heart"><i class="fa-solid fa-heart"></i></div>
+            <div class="card__cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="card__img">
+                <img src="./img/giay3.png">
+            </div>
+
+            <div class="card__title">Chuck Taylor All Star </div>
+            <div class="card__price">420$</div>
+            <div class="card__size">
+                <h3>SIZE:</h3>
+                <span>40</span>
+                <span>41</span>
+                <span>42</span>
+                <span>43</span>
+            </div>
+
+            <button style="margin-left: 30px" class="card__action" onclick="addtocart(this)">Add Cart</button>
+
+        </div>
+        <div class="card">
+            <div class="card__heart"><i class="fa-solid fa-heart"></i></div>
+            <div class="card__cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="card__img">
+                <img src="./img/giay8.png">
+            </div>
+
+            <div class="card__title">Chuck 70S Chuck Taylor</div>
+            <div class="card__price">390$</div>
+            <div class="card__size">
+                <h3>SIZE:</h3>
+                <span>42</span>
+                <span>43</span>
+                <span>44</span>
+                <span>45</span>
+            </div>
+
+            <button style="margin-left: 30px" class="card__action" onclick="addtocart(this)">Add Cart</button>
+
+        </div>
+        <div class="card">
+            <div class="card__heart"><i class="fa-solid fa-heart"></i></div>
+            <div class="card__cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="card__img">
+                <img src="./img/giay9.png">
+            </div>
+
+            <div class="card__title">Chuck Taylor All Star </div>
+            <div class="card__price">460$</div>
+            <div class="card__size">
+                <h3>SIZE:</h3>
+                <span>39</span>
+                <span>40</span>
+                <span>41</span>
+                <span>42</span>
+            </div>
+
+            <button style="margin-left: 30px" class="card__action" onclick="addtocart(this)">Add Cart</button>
+
+        </div>
+        <div class="card">
+            <div class="card__heart"><i class="fa-solid fa-heart"></i></div>
+            <div class="card__cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="card__img">
+                <img src="./img/img2.png.png">
+            </div>
+
+            <div class="card__title"> ADIDAS 4DFWD PULSE</div>
+            <div class="card__price">580$</div>
+            <div class="card__size">
+                <h3>SIZE:</h3>
+                <span>39</span>
+                <span>40</span>
+                <span>41</span>
+                <span>42</span>
+            </div>
+
+            <button style="margin-left: 30px" class="card__action" onclick="addtocart(this)">Add Cart</button>
+
+        </div>
+        <div class="card">
+            <div class="card__heart"><i class="fa-solid fa-heart"></i></div>
+            <div class="card__cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="card__img">
+                <img src="./img/giay10.png">
+            </div>
+
+            <div class="card__title">Yeezy Boost 350 V2</div>
+            <div class="card__price">660$</div>
+            <div class="card__size">
+                <h3>SIZE:</h3>
+                <span>39</span>
+                <span>40</span>
+                <span>41</span>
+                <span>42</span>
+            </div>
+
+            <button style="margin-left: 30px" class="card__action" onclick="addtocart(this)">Add Cart</button>
+
+        </div>
+
+
+
+    </nav1>
+    <script src="sneaker.js"></script>
+
+
+
+
+</body>
+
+</html>
